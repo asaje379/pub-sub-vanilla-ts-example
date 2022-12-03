@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pub Sub Example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        Welcome <span id="user"></span>, you actually have
+        <span id="friends-count"></span> friends.
+      </div>
+      <div class="sides">
+        <div class="left-side">
+          <h2>List of friends for my birthday</h2>
+          <form>
+            <div class="form-item">
+              <label for="friend-name">Name</label>
+              <input type="text" id="friend-name" name="name" />
+            </div>
+
+            <div class="form-item">
+              <label for="friend-age">Age</label>
+              <input type="number" min="0" id="friend-age" name="age" />
+            </div>
+
+            <button>Add my friend</button>
+          </form>
+        </div>
+        <div class="right-side">
+          <div class="define-user">
+            <label for="username">Your username</label>
+            <input type="text" id="username" />
+          </div>
+
+          <div class="friends-list">
+            <label>Your friends</label>
+            <div id="friends-list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
